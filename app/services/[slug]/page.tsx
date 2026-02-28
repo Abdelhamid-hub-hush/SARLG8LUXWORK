@@ -5,12 +5,12 @@ import { servicePhotos } from "@/lib/servicePhotos";
 
 import ServiceDetailClient from "@/app/services/[slug]/ServiceDetailClient";
 
-type PageProps = {
-  params: { slug: string };
+type Props = {
+  params: Promise<{ slug: string }>;
 };
 
-export default function ServiceDetailPage({ params }: PageProps) {
-  const { slug } = params;
+export default async function ServiceDetailPage({ params }: Props) {
+  const { slug } = await params;
 
   const service = services.find((s) => s.slug === slug);
   if (!service) return notFound();
