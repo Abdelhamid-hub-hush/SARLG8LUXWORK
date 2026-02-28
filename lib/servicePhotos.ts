@@ -7,6 +7,21 @@ import type { PhotoItem } from "@/components/Lightbox";
  * - من بعد زيديهم هنا حسب slug ديال service
  */
 export const servicePhotos: Record<string, PhotoItem[]> = {
+
+  //sky vieu
+"plafond-lumineux-sky": [
+   { src: "/services/sv1.jpeg", alt: "Plafond lumineux effet ciel 1" },
+  { src: "/services/sv2.jpeg", alt: "Plafond lumineux effet ciel 2" },
+  { src: "/services/sv3.jpeg", alt: "Plafond lumineux effet ciel 3" },
+  { src: "/services/skyv.jpeg", alt: "Plafond lumineux effet ciel 1" },
+  { src: "/services/skyv1.jpeg", alt: "Plafond lumineux effet ciel 2" },
+  { src: "/services/skyv2.jpeg", alt: "Plafond lumineux effet ciel 3" },
+  { src: "/services/skyv3.jpeg", alt: "Plafond lumineux effet ciel 4" },
+  { src: "/services/skyv4.jpeg", alt: "Plafond lumineux effet ciel 5" },
+  { src: "/services/skyv5.jpeg", alt: "Plafond lumineux effet ciel 6" },
+  { src: "/services/skyv6.jpeg", alt: "Plafond lumineux effet ciel 7" },
+  { src: "/services/skyv7.jpeg", alt: "Plafond lumineux effet ciel 8" },
+],
   // ✅ Caméras / Réseaux
   "cameras-reseaux": [
     { src: "/services/camera_01.jpeg", alt: "Caméra 1" },
@@ -19,11 +34,19 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
     { src: "/services/test1.png", alt: "hantarakaytzado" },
    
   ],
+
+
   //tajriba ziyada 
    "wakhdam": [
     { src: "/services/1.png", alt: "hantiakaoutarrakaytzado" },
    
   ],
+  "panneaux-publicitaires": [
+  { src: "/services/pa.jpeg", alt: "Panneaux publicitaires" },
+  { src: "/services/pajpeg.jpeg", alt: "Panneaux publicitaires" },
+  { src: "/services/pan.jpeg", alt: "Panneaux publicitaires" },
+  { src: "/services/PANi.jpeg", alt: "Panneaux publicitaires" },
+],
 
   // ✅ Climatisation (photos موجودين دابا ف public/services/)
   climatisation: [
@@ -83,12 +106,12 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
 
   electricite: [
     // مثال:
-    // { src: "/services/electricite_01.jpeg", alt: "Électricité" },
-    // { src: "/services/electricite_02.jpeg", alt: "Électricité" },
+  //   { src: "/services/electricite_01.jpeg", alt: "Électricité" },
+  // { src: "/services/plomberie.jpeg", alt: "Électricité" },
   ],
 
   plomberie: [
-    // { src: "/services/plomberie_01.jpeg", alt: "Plomberie" },
+    // { src: "/services/plomberie.jpeg", alt: "Plomberie" },
   ],
 
   "faux-plafonds-drywall": [

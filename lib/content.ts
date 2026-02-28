@@ -8,6 +8,57 @@ export type Service = {
 };
 
 export const services: Service[] = [
+
+{
+  slug: "plafond-lumineux-sky",
+  title: {
+    fr: "Plafond lumineux Sky",
+    ar: "سقف مضيء بتصميم السماء",
+  },
+  short: {
+    fr: "Installation de plafonds LED imprimés effet ciel pour espaces modernes.",
+    ar: "تركيب أسقف LED مطبوعة بتأثير السماء لإضفاء لمسة عصرية.",
+  },
+  bullets: {
+    fr: [
+      "Impression haute résolution effet ciel",
+      "Éclairage LED intégré",
+      "Installation sur faux plafond",
+      "Solution esthétique & moderne",
+    ],
+    ar: [
+      "طباعة عالية الدقة بتأثير السماء",
+      "إضاءة LED مدمجة",
+      "تركيب على سقف مستعار",
+      "حل جمالي وعصري",
+    ],
+  },
+},
+
+
+{
+  slug: "panneaux-publicitaires",
+  title: { fr: "Panneaux publicitaires", ar: "اللوحات الإعلانية" },
+  short: {
+    fr: "Conception, fabrication et pose de panneaux pour votre activité.",
+    ar: "تصميم وصناعة وتركيب اللوحات الإعلانية لنشاطك.",
+  },
+  bullets: {
+    fr: [
+      "Panneaux enseigne (façade, vitrine)",
+      "Panneaux PVC / Dibond / aluminium",
+      "Pose, fixation et finition propre",
+      "Personnalisation (logo, couleurs, dimensions)",
+    ],
+    ar: [
+      "لوحات واجهة المحل والواجهات الزجاجية",
+      "PVC / ديبوند / ألمنيوم",
+      "تركيب وتثبيت وتشطيب احترافي",
+      "تصميم حسب الشعار والألوان والمقاسات",
+    ],
+  },
+},
+
   {
     slug: "electricite",
     title: { fr: "Électricité", ar: "كهرباء" },
@@ -101,13 +152,5 @@ export const services: Service[] = [
   },
 
 
-  {
-    slug: "ttttttttttttttttttttttttttttttt",
-    title: { fr: "test", ar: "جبس وبلاكو" },
-    short: { fr: "test", ar: "قواطع، تغليف، ستاف، وتشطيب (جبس)." },
-    bullets: {
-      fr: ["test", "Finition propre"],
-      ar: ["قواطع وتغليف", "ستاف وكرانيش", "عزل (اختياري)", "تشطيب نظيف"],
-    },
-  },
+
 ];

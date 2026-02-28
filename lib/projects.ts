@@ -25,6 +25,28 @@ export const projects: Project[] = [
       "/realisations/villa1/3.jpg",
     ],
   },
+  
+  //// ha fin nzido ahbeba l code dyalna dyalna labghina nzido chi projet
+  {
+  slug: "panneaux-publicitaires-2026",
+  title: "Panneaux publicitaires",
+  category: "Signalétique",
+  location: "Témara",
+  description: "Conception, fabrication et pose de panneaux publicitaires.",
+  cover: "/realisations/panneaux/cover.jpeg",
+  images: [
+    "/realisations/panneaux/6.jpeg",
+   "/realisations/panneaux/5.jpeg",
+     "/realisations/panneaux/1.jpeg",
+   // "/realisations/panneaux/3.jpeg",
+     "/realisations/panneaux/9.jpeg",
+    "/realisations/panneaux/10.jpeg",
+    "/realisations/panneaux/7.jpeg",
+    "/realisations/panneaux/8.jpeg",
+    "/realisations/panneaux/6.jpeg",
+  ],
+},
+  
 ///// wast had classe ndiro les projets as object
   {
     slug: "appartement-casablanca-2025", // خاصو يكون unique
