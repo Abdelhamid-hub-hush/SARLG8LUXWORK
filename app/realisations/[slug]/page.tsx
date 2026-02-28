@@ -3,14 +3,14 @@ import { notFound } from "next/navigation";
 import { projects } from "@/lib/projects";
 import ProjectsGallery from "@/components/ProjectsGallery";
 
-
-export default function ProjectPage({
+export default async function ProjectPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const project = projects.find((p) => p.slug === params.slug);
+  const { slug } = await params;
 
+  const project = projects.find((p) => p.slug === slug);
   if (!project) notFound();
 
   const images = Array.isArray(project.images)
@@ -23,7 +23,6 @@ export default function ProjectPage({
 
   return (
     <section className="mx-auto max-w-6xl px-4 py-12">
-      {/* ✅ زر رجوع للائحة المشاريع */}
       <Link
         href="/realisations"
         className="inline-flex items-center gap-2 text-sm text-white/60 hover:text-white"
@@ -50,16 +49,6 @@ export default function ProjectPage({
             Aucune photo pour ce projet.
           </div>
         )}
-      </div>
-
-      {/* ✅ زر رجوع ثاني فالأخير (اختياري) */}
-      <div className="mt-10">
-        <Link
-          href="/realisations"
-          className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/80 hover:bg-white/5"
-        >
-          ← Retour à la liste
-        </Link>
       </div>
     </section>
   );
