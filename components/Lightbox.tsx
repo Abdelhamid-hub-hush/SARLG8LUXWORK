@@ -55,38 +55,65 @@ function Modal({
         className="relative w-full max-w-6xl rounded-3xl border border-white/10 bg-black/40 overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* ✅ Close */}
         <button
           type="button"
-          className="absolute right-3 top-3 z-10 rounded-full border border-white/15 bg-black/60 px-3 py-2 text-sm text-white/80 hover:bg-black/80"
+          className="absolute right-3 top-3 z-30 rounded-full border border-white/15 bg-black/60 px-3 py-2 text-sm text-white/80 hover:bg-black/80"
           onClick={onClose}
+          aria-label="Close"
         >
           ✕
         </button>
 
+        {/* ✅ Prev */}
         <button
           type="button"
-          className="absolute left-3 top-1/2 -translate-y-1/2 z-10 rounded-full border border-white/15 bg-black/60 px-3 py-2 text-xl text-white/80 hover:bg-black/80"
+          className="absolute left-3 top-1/2 -translate-y-1/2 z-30 rounded-full border border-white/15 bg-black/60 px-3 py-2 text-xl text-white/80 hover:bg-black/80"
           onClick={onPrev}
+          aria-label="Previous"
         >
           ‹
         </button>
 
+        {/* ✅ Next */}
         <button
           type="button"
-          className="absolute right-3 top-1/2 -translate-y-1/2 z-10 rounded-full border border-white/15 bg-black/60 px-3 py-2 text-xl text-white/80 hover:bg-black/80"
+          className="absolute right-3 top-1/2 -translate-y-1/2 z-30 rounded-full border border-white/15 bg-black/60 px-3 py-2 text-xl text-white/80 hover:bg-black/80"
           onClick={onNext}
+          aria-label="Next"
         >
           ›
         </button>
 
-        <div className="relative aspect-[16/10] bg-black">
-          <WatermarkedImage src={img.src} alt={img.alt ?? "Photo"} fill className="object-contain" watermarkOpacity={0.12} watermarkSizePx={260} priority />
+        {/* ✅ Image area (better for portrait & landscape) */}
+        <div className="relative w-full h-[80vh] bg-black/40 overflow-hidden">
+          {/* Blurred background */}
+          <img
+            src={img.src}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 w-full h-full object-cover blur-3xl scale-125 opacity-50 saturate-150 pointer-events-none z-0"
+          />
+
+          {/* Main image */}
+          <div className="relative z-10 w-full h-full">
+            <WatermarkedImage
+              src={img.src}
+              alt={img.alt ?? "Photo"}
+              fill
+              className="object-contain"
+              watermarkOpacity={0.12}
+              watermarkSizePx={260}
+              priority
+            />
+          </div>
         </div>
 
+        {/* ✅ Caption */}
         <div className="p-4 text-sm text-white/70 flex items-center justify-between">
           <div className="truncate">{img.alt ?? img.caption ?? ""}</div>
           <div className="text-white/50">
-            {index + 1} / {images.length}
+            {index + 1} / {images?.length ?? 0}
           </div>
         </div>
       </div>
@@ -120,9 +147,13 @@ export default function PhotoCatalog({
 
   const close = () => setOpenIndex(null);
   const prev = () =>
-    setOpenIndex((i) => (i === null ? null : (i - 1 + images.length) % images.length));
+    setOpenIndex((i) =>
+      i === null ? null : (i - 1 + imagesSafe.length) % imagesSafe.length
+    );
   const next = () =>
-    setOpenIndex((i) => (i === null ? null : (i + 1) % images.length));
+    setOpenIndex((i) =>
+      i === null ? null : (i + 1) % imagesSafe.length
+    );
 
   return (
     <div>
@@ -134,7 +165,15 @@ export default function PhotoCatalog({
             onClick={() => setOpenIndex(i)}
             className={`relative ${aspect} overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] cursor-pointer`}
           >
-            {/* مهم: نخلي الصورة ما تشدّش click */}
+            {/* ✅ Thumb blur background */}
+            <img
+              src={it.src}
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 w-full h-full object-cover blur-xl scale-110 opacity-20 pointer-events-none"
+            />
+
+            {/* ✅ Main thumb */}
             <WatermarkedImage
               src={it.src}
               alt={it.alt ?? "Photo"}
@@ -143,13 +182,20 @@ export default function PhotoCatalog({
               watermarkOpacity={0.10}
               watermarkSizePx={220}
             />
+
             <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition" />
           </button>
         ))}
       </div>
 
       {openIndex !== null ? (
-        <Modal images={imagesSafe} index={openIndex} onClose={close} onPrev={prev} onNext={next} />
+        <Modal
+          images={imagesSafe}
+          index={openIndex}
+          onClose={close}
+          onPrev={prev}
+          onNext={next}
+        />
       ) : null}
     </div>
   );

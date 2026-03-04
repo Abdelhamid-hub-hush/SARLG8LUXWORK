@@ -1,24 +1,22 @@
 "use client";
 
 import Image, { type ImageProps } from "next/image";
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { site } from "@/lib/site";
 
 type Props = Omit<ImageProps, "alt"> & {
   alt?: string;
-  /** Opacité du watermark (0 → 1). */
   watermarkOpacity?: number;
-  /** Taille du motif du watermark (px). */
   watermarkSizePx?: number;
-  /** Texte du watermark (par défaut: site.name). */
   watermarkText?: string;
-  /** Désactive le clic droit sur l'image (anti download basique). */
   disableContextMenu?: boolean;
 };
 
 function svgDataUri(text: string) {
-  // Simple SVG motif (diagonal) – encodé en URI
-  const safe = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const safe = text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
   const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="420" height="220" viewBox="0 0 420 220">
   <defs>
@@ -36,7 +34,7 @@ function svgDataUri(text: string) {
 }
 
 export default function WatermarkedImage({
-  watermarkOpacity = 0.10,
+  watermarkOpacity = 0.1,
   watermarkSizePx = 220,
   watermarkText = site.name,
   disableContextMenu = true,
@@ -47,17 +45,58 @@ export default function WatermarkedImage({
 }: Props) {
   const pattern = useMemo(() => svgDataUri(watermarkText), [watermarkText]);
 
-  // Defensive: sometimes callers pass a {src, alt} object by mistake.
+  const wrapRef = useRef<HTMLDivElement | null>(null);
+  const [rect, setRect] = useState<{ left: number; top: number; width: number; height: number } | null>(
+    null
+  );
+
+  // Detect fit mode from className (tailwind)
+  const isContain = (className ?? "").split(/\s+/).includes("object-contain");
+
   const srcRaw: any = (props as any).src;
   const normalizedSrc =
     typeof srcRaw === "object" && srcRaw && "src" in srcRaw ? (srcRaw as any).src : srcRaw;
+
   const { src: _ignored, ...restProps } = props as any;
 
+  const computeContainRect = (naturalW: number, naturalH: number) => {
+    const el = wrapRef.current;
+    if (!el) return;
+
+    const cw = el.clientWidth;
+    const ch = el.clientHeight;
+
+    if (!cw || !ch || !naturalW || !naturalH) return;
+
+    // object-fit: contain math
+    const scale = Math.min(cw / naturalW, ch / naturalH);
+    const w = naturalW * scale;
+    const h = naturalH * scale;
+    const left = (cw - w) / 2;
+    const top = (ch - h) / 2;
+
+    setRect({ left, top, width: w, height: h });
+  };
+
+  useEffect(() => {
+    const el = wrapRef.current;
+    if (!el || !isContain) return;
+
+    const ro = new ResizeObserver(() => {
+      // we recompute when container changes; rect will be recomputed on next image load info if available
+      // keep current rect if exists
+      if (rect) setRect({ ...rect });
+    });
+
+    ro.observe(el);
+    return () => ro.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isContain]);
 
   return (
     <div
-      className={className}
-      style={{ position: "relative", width: "100%", height: "100%" }}
+      ref={wrapRef}
+      style={{ position: "relative", width: "100%", height: "100%", overflow: "hidden" }}
       onContextMenu={disableContextMenu ? (e) => e.preventDefault() : undefined}
     >
       <Image
@@ -65,21 +104,29 @@ export default function WatermarkedImage({
         src={normalizedSrc}
         alt={alt ?? "Image"}
         draggable={false}
+        fill
+        className={className}
         style={style}
+        onLoadingComplete={(img) => {
+          if (isContain) computeContainRect(img.naturalWidth, img.naturalHeight);
+          else setRect(null);
+        }}
       />
 
-      {/* Watermark overlay */}
+      {/* Watermark overlay: full for cover, cropped to image box for contain */}
       <div
         aria-hidden="true"
         style={{
           pointerEvents: "none",
           position: "absolute",
-          inset: 0,
+          left: rect ? rect.left : 0,
+          top: rect ? rect.top : 0,
+          width: rect ? rect.width : "100%",
+          height: rect ? rect.height : "100%",
           backgroundImage: `url("${pattern}")`,
           backgroundRepeat: "repeat",
           backgroundSize: `${watermarkSizePx}px`,
           opacity: watermarkOpacity,
-          mixBlendMode: "normal",
         }}
       />
     </div>
