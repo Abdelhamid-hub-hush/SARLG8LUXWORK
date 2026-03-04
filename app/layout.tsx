@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/components/lang/LanguageProvider";
+import WhatsAppFloat from "@/components/WhatsAppFloat"; // ✅ NEW
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://g8luxwork.com"),
@@ -45,6 +46,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           <main>{children}</main>
           <Footer />
+
+          {/* ✅ WhatsApp floating button (mobile only) */}
+          <WhatsAppFloat />
         </LanguageProvider>
       </body>
     </html>
