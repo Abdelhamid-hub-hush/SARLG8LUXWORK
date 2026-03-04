@@ -9,20 +9,20 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noreferrer"
       aria-label="WhatsApp"
+      title="WhatsApp"
       className="
         fixed bottom-5 right-5 z-[9999]
-        inline-flex items-center gap-2
-        rounded-full px-4 py-3
+        h-14 w-14 md:hidden
+        rounded-full
         bg-[#25D366] text-black
-        shadow-lg shadow-black/30
         border border-white/10
-        hover:scale-[1.03] active:scale-[0.98]
+        shadow-lg shadow-black/30
+        grid place-items-center
+        hover:scale-[1.05] active:scale-[0.98]
         transition
-        md:hidden
       "
     >
-      <span className="text-lg">💬</span>
-      <span className="text-sm font-semibold">WhatsApp</span>
+      <span className="text-2xl">💬</span>
     </a>
   );
 }
