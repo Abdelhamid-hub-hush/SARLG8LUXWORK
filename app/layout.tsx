@@ -4,25 +4,25 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/components/lang/LanguageProvider";
-import FloatingActions from "@/components/FloatingActions"; 
+import FloatingActions from "@/components/FloatingActions";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://g8luxwork.com"),
   title: {
-  default: "G8LuxWork | Rénovation, Construction & Aménagement au Maroc",
-  template: "%s | G8LuxWork",
-},
-description:
-  "Entreprise de rénovation, construction et aménagement au Maroc: plomberie, électricité, peinture, faux plafonds, aluminium, verre trempé, caméras de surveillance. Devis rapide.",
+    default: "G8LuxWork | Rénovation, Construction & Aménagement au Maroc",
+    template: "%s | G8LuxWork",
+  },
+  description:
+    "Entreprise de rénovation, construction et aménagement au Maroc: plomberie, électricité, peinture, faux plafonds, aluminium, verre trempé, caméras de surveillance. Devis rapide.",
   alternates: {
     canonical: "https://g8luxwork.com",
   },
   openGraph: {
     type: "website",
     url: "https://g8luxwork.com",
-    title: "G8LuxWork | Rénovation & Travaux à Témara",
+    title: "G8LuxWork | Rénovation, Construction & Aménagement au Maroc",
     description:
-      "Rénovation & travaux à Témara: plomberie, électricité, peinture, faux plafonds, aluminium, verre, caméras. Devis rapide.",
+      "Entreprise de rénovation, construction et aménagement au Maroc: plomberie, électricité, peinture, faux plafonds, aluminium, verre trempé, caméras de surveillance. Devis rapide.",
     siteName: "G8LuxWork",
   },
   robots: {
@@ -39,6 +39,15 @@ description:
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    name: "G8LuxWork",
+    url: "https://g8luxwork.com",
+    areaServed: "MA",
+    sameAs: ["https://maps.app.goo.gl/agRyJua2JgZr9Tdf9"],
+  };
+
   return (
     <html lang="fr" dir="ltr" suppressHydrationWarning>
       <body>
@@ -46,24 +55,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           <main>{children}</main>
           <Footer />
-<Footer />
 
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "HomeAndConstructionBusiness",
-      name: "G8LuxWork",
-      url: "https://g8luxwork.com",
-      areaServed: "MA",
-      sameAs: ["https://maps.app.goo.gl/agRyJua2JgZr9Tdf9"],
-    }),
-  }}
-/>
+          {/* SEO: LocalBusiness schema */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
 
-<FloatingActions />
-          {}
+          {/* ✅ Floating buttons (mobile only): Call + WhatsApp */}
           <FloatingActions />
         </LanguageProvider>
       </body>
