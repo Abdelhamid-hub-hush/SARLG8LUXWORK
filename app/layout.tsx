@@ -46,7 +46,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           <main>{children}</main>
           <Footer />
+<Footer />
 
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      name: "G8LuxWork",
+      url: "https://g8luxwork.com",
+      areaServed: "MA",
+      sameAs: ["https://maps.app.goo.gl/agRyJua2JgZr9Tdf9"],
+    }),
+  }}
+/>
+
+<FloatingActions />
           {}
           <FloatingActions />
         </LanguageProvider>
