@@ -4,16 +4,16 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/components/lang/LanguageProvider";
-import FloatingActions from "@/components/FloatingActions"; // ✅ buttons (call + whatsapp)
+import FloatingActions from "@/components/FloatingActions"; 
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://g8luxwork.com"),
   title: {
-    default: "G8LuxWork | Rénovation & Travaux à Témara",
-    template: "%s | G8LuxWork",
-  },
-  description:
-    "Entreprise de rénovation & travaux à Témara: plomberie, électricité, peinture, faux plafonds, aluminium, verre, caméras. Devis rapide.",
+  default: "G8LuxWork | Rénovation, Construction & Aménagement au Maroc",
+  template: "%s | G8LuxWork",
+},
+description:
+  "Entreprise de rénovation, construction et aménagement au Maroc: plomberie, électricité, peinture, faux plafonds, aluminium, verre trempé, caméras de surveillance. Devis rapide.",
   alternates: {
     canonical: "https://g8luxwork.com",
   },
@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main>{children}</main>
           <Footer />
 
-          {/* ✅ Floating buttons (mobile only): Call + WhatsApp */}
+          {}
           <FloatingActions />
         </LanguageProvider>
       </body>
