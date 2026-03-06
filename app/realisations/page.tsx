@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useLang } from "@/components/lang/LanguageProvider";
 import { projects } from "@/lib/projects";
+import RealisationsShowcaseVideo from "@/components/RealisationsShowcaseVideo";
 
 export default function RealisationsPage() {
   const { lang } = useLang();
@@ -18,6 +19,9 @@ export default function RealisationsPage() {
     <section className="mx-auto max-w-6xl px-4 py-12">
       <h1 className="text-3xl font-semibold">{title}</h1>
       <p className="mt-2 text-white/70">{subtitle}</p>
+
+      {/* Featured cinematic video */}
+      <RealisationsShowcaseVideo />
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p) => (
