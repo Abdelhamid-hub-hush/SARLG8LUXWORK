@@ -21,28 +21,15 @@ export default function BeforeAfterSlider({
   return (
     <div className="w-full">
       <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] shadow-soft aspect-[4/3] sm:aspect-[16/10]">
-        {/* Before */}
-        <Image
-          src={beforeSrc}
-          alt="Before"
-          fill
-          className="object-cover"
-        />
+        <Image src={beforeSrc} alt="Before" fill className="object-cover" />
 
-        {/* After */}
         <div
           className="absolute inset-0 overflow-hidden"
           style={{ width: `${position}%` }}
         >
-          <Image
-            src={afterSrc}
-            alt="After"
-            fill
-            className="object-cover"
-          />
+          <Image src={afterSrc} alt="After" fill className="object-cover" />
         </div>
 
-        {/* Labels */}
         <div className="absolute left-3 top-3 rounded-full bg-black/60 px-3 py-1 text-[11px] text-white sm:left-4 sm:top-4 sm:text-xs">
           {beforeLabel}
         </div>
@@ -50,7 +37,6 @@ export default function BeforeAfterSlider({
           {afterLabel}
         </div>
 
-        {/* Divider */}
         <div
           className="absolute top-0 bottom-0 w-1 bg-white/90"
           style={{ left: `${position}%`, transform: "translateX(-50%)" }}
@@ -60,7 +46,6 @@ export default function BeforeAfterSlider({
           </div>
         </div>
 
-        {/* Range input */}
         <input
           type="range"
           min="0"
