@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects } from "@/lib/projects";
+
 import ProjectsGallery from "@/components/ProjectsGallery";
 
 export default async function ProjectPage({
