@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { useLang } from "@/components/lang/LanguageProvider";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 
 export default function AboutPage() {
   const { lang } = useLang();
@@ -19,6 +20,14 @@ export default function AboutPage() {
       lang === "fr"
         ? "Offrir un travail propre, durable et professionnel. Nous accompagnons chaque client du premier contact jusqu’à la livraison finale avec un suivi sérieux."
         : "هدفنا تقديم خدمة نظيفة، احترافية ودائمة مع متابعة كل مشروع من البداية حتى التسليم.",
+
+    beforeAfterTitle:
+      lang === "fr" ? "Avant / Après : rénovation cuisine" : "قبل / بعد: تجديد مطبخ",
+
+    beforeAfterText:
+      lang === "fr"
+        ? "Un aperçu concret de la transformation avant et après travaux."
+        : "نظرة واضحة على الفرق قبل وبعد الأشغال.",
 
     stats: [
       {
@@ -79,10 +88,7 @@ export default function AboutPage() {
       },
     ],
 
-    cta:
-      lang === "fr"
-        ? "Vous avez un projet ?"
-        : "عندك مشروع؟",
+    cta: lang === "fr" ? "Vous avez un projet ?" : "عندك مشروع؟",
 
     ctaText:
       lang === "fr"
@@ -94,7 +100,6 @@ export default function AboutPage() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 py-12">
-
       {/* HERO */}
       <div className="rounded-[32px] border border-white/10 bg-white/[0.02] p-10 shadow-soft">
         <p className="text-gold text-sm tracking-widest">{site.tagline[lang]}</p>
@@ -106,6 +111,21 @@ export default function AboutPage() {
         <p className="mt-4 max-w-3xl text-white/70 leading-relaxed">
           {t.intro}
         </p>
+      </div>
+
+      {/* BEFORE / AFTER */}
+      <div className="mt-10 rounded-3xl border border-white/10 bg-white/[0.02] p-8 shadow-soft">
+        <h2 className="text-xl font-semibold">{t.beforeAfterTitle}</h2>
+        <p className="mt-2 text-white/70">{t.beforeAfterText}</p>
+
+        <div className="mt-6">
+          <BeforeAfterSlider
+            beforeSrc="/realisations/cuisine-before.jpeg"
+            afterSrc="/realisations/cuisine-after.jpeg"
+            beforeLabel={lang === "fr" ? "Avant" : "قبل"}
+            afterLabel={lang === "fr" ? "Après" : "بعد"}
+          />
+        </div>
       </div>
 
       {/* STATS */}
@@ -174,7 +194,6 @@ export default function AboutPage() {
           {t.ctaBtn}
         </Link>
       </div>
-
     </section>
   );
 }
