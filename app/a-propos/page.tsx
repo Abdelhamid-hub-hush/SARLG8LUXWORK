@@ -122,6 +122,18 @@ export default function AboutPage() {
   };
 
   const transformations = [
+        {
+  titleFr: "Installation Sky View en salle de réanimation 1",
+  titleAr: " 1تركيب سكاي فيو في قاعة الإنعاش",
+  before: "/realisations/skv_befor.jpeg",
+  after: "/realisations/skv_after.jpeg",
+},
+    {
+  titleFr: "Installation Sky View en salle de réanimation 2",
+  titleAr: " 2 تركيب سكاي فيو في قاعة الإنعاش",
+  before: "/realisations/skvs_befor.jpeg",
+  after: "/realisations/skvs_after.jpeg",
+},
     {
       titleFr: "Rénovation cuisine",
       titleAr: "تجديد مطبخ",
@@ -140,6 +152,8 @@ export default function AboutPage() {
       before: "/realisations/electricite-before.jpeg",
       after: "/realisations/electricite-after.jpeg",
     },
+
+
   ];
 
   return (
