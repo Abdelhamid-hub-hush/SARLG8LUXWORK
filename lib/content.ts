@@ -34,6 +34,18 @@ export const services: Service[] = [
     ],
   },
 },
+  {
+  slug: "cadres-muraux-decoratifs",
+  title: { fr: "Cadres muraux décoratifs", ar: "إطارات حائطية ديكورية" },
+  short: {
+    fr: "Installation de cadres décoratifs pour sublimer vos murs avec élégance.",
+    ar: "تركيب إطارات حائطية ديكورية لإضفاء لمسة جمالية أنيقة على الجدران.",
+  },
+  bullets: {
+    fr: ["Décoration murale", "Composition harmonieuse", "Pose soignée", "Finition élégante"],
+    ar: ["ديكور جداري", "تنسيق متناسق", "تركيب بعناية", "لمسة أنيقة"],
+  },
+},
 
 
 {
@@ -68,6 +80,7 @@ export const services: Service[] = [
       ar: ["لوحة كهرباء", "إنارة", "مآخذ وأسلاك", "تدخل سريع"],
     },
   },
+
 
   // ✅ Nouveau service
   {

@@ -13,7 +13,7 @@ export default function HomePage() {
       badge: "Témara • Rénovation & travaux à domicile",
       h1a: "Rénovation & Construction",
       h1b: "haut de gamme",
-      p: "Des travaux de rénovation fiables, soignés et réalisés avec précision : électricité, plomberie, climatisation, plâtrerie, peinture, aluminium, verre trempé, réseaux et caméras.",
+      p: "Travaux de rénovation et d’aménagement réalisés avec précision : électricité, plomberie, climatisation, plâtrerie, peinture, aluminium, verre trempé, réseaux et caméras, ainsi que des solutions décoratives modernes comme les plafonds Sky View et les tableaux décoratifs muraux.",
       cta1: "Demander un devis",
       cta2: "Découvrir nos services",
       services: "Nos services",
