@@ -22,7 +22,7 @@ export default function HomePage() {
         "Installation, configuration, maintenance — caméras de surveillance & câblage réseau.",
       featuredBtn: "En savoir plus →",
       gallery: "Réalisations",
-      //gallerySub: "Ajoutez vos photos pour renforcer la confiance.",
+      gallerySub: "Découvrez quelques exemples de nos réalisations récentes.",
       viewAll: "Voir la galerie →",
     },
     ar: {
@@ -58,37 +58,40 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="mx-auto max-w-6xl px-4 py-12 md:py-14">
-        <span className="inline-flex items-center rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs text-white/70">
+      <section className="mx-auto max-w-6xl px-4 py-10 md:py-14">
+        <span className="inline-flex items-center rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[11px] text-white/70 sm:text-xs">
           {t.badge}
         </span>
 
-        <div className="mt-4 grid items-center gap-10 md:grid-cols-2">
+        <div className="mt-5 grid items-center gap-8 md:grid-cols-2 md:gap-10">
           <div>
-            <h1 className="text-4xl font-semibold leading-[1.05] tracking-tight md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-semibold leading-[1.05] tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               {t.h1a}
               <span className="mt-2 block text-gold/90">{t.h1b}</span>
             </h1>
 
-            <p className="mt-5 max-w-2xl leading-relaxed text-white/70">{t.p}</p>
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base">
+              {t.p}
+            </p>
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-7 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-3">
               <Link
                 href="/contact"
-                className="rounded-full bg-gold px-6 py-3 text-sm font-medium text-black hover:bg-[#ffe1a2]"
+                className="w-full rounded-full bg-gold px-3 py-3 text-center text-[11px] font-medium text-black transition hover:bg-[#ffe1a2] sm:w-auto sm:px-6 sm:text-sm"
               >
                 {t.cta1}
               </Link>
+
               <Link
                 href="/services"
-                className="rounded-full border border-white/15 px-6 py-3 text-sm text-white/90 hover:bg-white/5"
+                className="w-full rounded-full border border-white/15 px-3 py-3 text-center text-[11px] text-white/90 transition hover:bg-white/5 sm:w-auto sm:px-6 sm:text-sm"
               >
                 {t.cta2}
               </Link>
             </div>
           </div>
 
-          <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-8 shadow-soft">
+          <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-4 shadow-soft sm:p-6 md:p-8">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10">
               <WatermarkedImage
                 src="/realisations/page_acceuil.jpeg"
@@ -99,7 +102,8 @@ export default function HomePage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             </div>
-            <p className="mt-4 text-xs text-white/50">
+
+            <p className="mt-4 text-[11px] text-white/50 sm:text-xs">
               “Quality • Precision • Commitment”
             </p>
           </div>
@@ -107,18 +111,19 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES LIST */}
-      <section className="mx-auto max-w-6xl px-4 py-12">
+      <section className="mx-auto max-w-6xl px-4 py-10 md:py-12">
         <h2 className="text-2xl font-semibold md:text-3xl">{t.services}</h2>
         <ServiceCards lang={lang} />
       </section>
 
       {/* FEATURED CAMERAS SECTION */}
-      <section className="mx-auto max-w-6xl px-4 py-12">
-        <div className="flex items-end justify-between gap-4">
+      <section className="mx-auto max-w-6xl px-4 py-10 md:py-12">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="text-2xl font-semibold md:text-3xl">{t.featuredTitle}</h2>
-            <p className="mt-2 text-white/70">{t.featuredSub}</p>
+            <p className="mt-2 text-sm text-white/70 sm:text-base">{t.featuredSub}</p>
           </div>
+
           <Link
             className="text-sm text-gold hover:underline"
             href="/services/cameras-reseaux"
@@ -132,6 +137,7 @@ export default function HomePage() {
             <div className="text-sm text-white/70">
               {lang === "fr" ? "Inclus" : "الخدمات"}
             </div>
+
             <ul className="mt-4 grid gap-2 text-sm text-white/75">
               <li className="flex gap-2">
                 <span className="text-gold">•</span>
@@ -171,9 +177,9 @@ export default function HomePage() {
       </section>
 
       {/* REALISATIONS */}
-      <section className="mx-auto max-w-6xl px-4 py-12">
+      <section className="mx-auto max-w-6xl px-4 py-10 md:py-12">
         <h2 className="text-2xl font-semibold md:text-3xl">{t.gallery}</h2>
-        <p className="mt-2 text-white/70">{t.gallerySub}</p>
+        <p className="mt-2 text-sm text-white/70 sm:text-base">{t.gallerySub}</p>
 
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {miniGallery.map((src) => (
