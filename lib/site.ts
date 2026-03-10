@@ -12,7 +12,7 @@ export const site = {
   social: {
     instagram: "https://www.instagram.com/g8luxwork?igsh=MW5pMjBvaW1xNGY3bA==",
     facebook: "https://www.facebook.com/share/17y6QXfUL5/",
-    linkedin: "https://www.linkedin.com/in/g8-lux-work-7744313b5",
+    linkedin: "https://www.linkedin.com/in/abdelhamid-luxwork-7744313b5/",
   },
 } as const;
 
