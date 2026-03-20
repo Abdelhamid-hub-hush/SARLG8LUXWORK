@@ -151,8 +151,8 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
   electricite: [
    
 { src: "/services/electricite (1).jpeg", alt: "Électricité" },
-{ src: "/services/electricite (2).jpeg", alt: "Électricité" },
-{ src: "/services/electricite (3).jpeg", alt: "Électricité" },
+//{ src: "/services/electricite (2).jpeg", alt: "Électricité" },
+//{ src: "/services/electricite (3).jpeg", alt: "Électricité" },
 { src: "/services/electricite (4).jpeg", alt: "Électricité" },
 { src: "/services/electricite (5).jpeg", alt: "Électricité" },
 { src: "/services/electricite (6).jpeg", alt: "Électricité" },

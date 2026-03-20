@@ -69,6 +69,7 @@ export default function WatermarkedImage({
     if (!cw || !ch || !naturalW || !naturalH) return;
 
     // object-fit: contain math
+    /// entrainememt du model
     const scale = Math.min(cw / naturalW, ch / naturalH);
     const w = naturalW * scale;
     const h = naturalH * scale;
