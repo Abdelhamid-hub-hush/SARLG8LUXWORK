@@ -47,7 +47,31 @@ export const services: Service[] = [
   },
 },
 
-
+{
+  slug: "placards-lits-sur-mesure",
+  title: { 
+    fr: "Placards et lits sur mesure", 
+    ar: "خزائن وأسِرّة مصممة حسب الطلب" 
+  },
+  short: {
+    fr: "Conception et réalisation de placards et lits en bois sur mesure pour optimiser vos espaces avec style et fonctionnalité.",
+    ar: "تصميم وتنفيذ خزائن وأسِرّة خشبية حسب الطلب لتحسين استغلال المساحات بأسلوب عصري وعملي.",
+  },
+  bullets: {
+    fr: [
+      "Fabrication sur mesure",
+      "Optimisation de l’espace",
+      "Design moderne",
+      "Finition soignée"
+    ],
+    ar: [
+      "تصميم حسب الطلب",
+      "استغلال أمثل للمساحة",
+      "تصميم عصري",
+      "تشطيب متقن"
+    ],
+  },
+},
 {
   slug: "panneaux-publicitaires",
   title: { fr: "Panneaux publicitaires", ar: "اللوحات الإعلانية" },
@@ -93,16 +117,32 @@ export const services: Service[] = [
     },
   },
 
-  {
-    slug: "plomberie",
-    title: { fr: "Plomberie", ar: "سباكة" },
-    short: { fr: "Fuites, robinetterie, sanitaires, chauffe-eau.", ar: "تسربات، صنابير، تجهيزات صحية، سخان." },
-    bullets: {
-      fr: ["Réparation de fuites", "Installation sanitaire", "Chauffe-eau", "Entretien & conseils"],
-      ar: ["إصلاح التسربات", "تركيب صحي", "سخان الماء", "صيانة ونصائح"],
-    },
-  },
 
+{
+  slug: "plomberie",
+  title: { 
+    fr: "Plomberie professionnelle", 
+    ar: "خدمات السباكة الاحترافية" 
+  },
+  short: {
+    fr: "Réalisation complète de travaux de plomberie : installation, réparation et maintenance pour garantir un système fiable et durable.",
+    ar: "تنفيذ جميع أعمال السباكة من تركيب وصيانة وإصلاح لضمان نظام مياه متكامل وموثوق.",
+  },
+  bullets: {
+    fr: [
+      "Installation complète",
+      "Réparation rapide",
+      "Maintenance durable",
+      "Finition soignée"
+    ],
+    ar: [
+      "تركيب متكامل",
+      "إصلاح سريع",
+      "صيانة مستمرة",
+      "تشطيب متقن"
+    ],
+  },
+},
   {
     slug: "cameras-reseaux",
     title: { fr: "Réseaux & Caméras", ar: "شبكات وكاميرات مراقبة" },

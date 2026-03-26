@@ -73,6 +73,47 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
     { src: "/services/camera_03.jpeg", alt: "Caméra 3" },
     { src: "/services/camera_04.jpeg", alt: "Caméra 4" },
   ],
+"Aménagement bois sur mesure": [
+  { src: "/services/khchab1%20(1).jpeg", alt: "Fabrication de placard sur mesure" },
+  { src: "/services/khchab1%20(2).jpeg", alt: "Fabrication de mobilier en bois" },
+  { src: "/services/khchab1%20(3).jpeg", alt: "Structure de lit sur mesure" },
+  { src: "/services/khchab1%20(4).jpeg", alt: "Assemblage placard bois" },
+  { src: "/services/khchab1%20(5).jpeg", alt: "Lit bois en cours de fabrication" },
+
+  { src: "/services/khchab2%20(1).jpeg", alt: "Placard moderne avec finition LED" },
+  { src: "/services/khchab2%20(2).jpeg", alt: "Placard coulissant en bois" },
+  { src: "/services/khchab2%20(3).jpeg", alt: "Chambre avec placard intégré" },
+  { src: "/services/khchab2%20(4).jpeg", alt: "Placard design moderne" },
+  { src: "/services/khchab2%20(5).jpeg", alt: "Placard bois finition propre" },
+  { src: "/services/khchab2%20(6).jpeg", alt: "Placard avec lit intégré" },
+  { src: "/services/khchab2%20(7).jpeg", alt: "Aménagement chambre sur mesure" },
+
+  { src: "/services/khchab3%20(1).jpeg", alt: "Structure lit bois moderne" },
+  { src: "/services/khchab3%20(2).jpeg", alt: "Lit sur mesure installation" },
+  { src: "/services/khchab3%20(3).jpeg", alt: "Lit bois design minimaliste" },
+  { src: "/services/khchab3%20(4).jpeg", alt: "Finition lit sur mesure" },
+],
+"plomberie": [
+  { src: "/services/plomberie%20(1).jpeg", alt: "Travaux de plomberie extérieure" },
+
+  { src: "/services/plomberie%20(2).jpeg", alt: "Installation réseau plomberie" },
+  { src: "/services/plomberie%20(3).jpeg", alt: "Réparation plomberie" },
+  { src: "/services/plomberie%20(4).jpeg", alt: "Maintenance système d'eau" },
+  { src: "/services/plomberie%20(5).jpeg", alt: "Travaux techniques plomberie" },
+  { src: "/services/plomberie%20(6).jpeg", alt: "Installation fontaine décorative" },
+  { src: "/services/plomberie%20(7).jpeg", alt: "Raccordement tuyauterie" },
+  { src: "/services/plomberie%20(8).jpeg", alt: "Finition canalisation" },
+  { src: "/services/plomberie%20(9).jpeg", alt: "Système hydraulique extérieur" },
+  { src: "/services/plomberie%20(10).jpeg", alt: "Détail installation eau" },
+  { src: "/services/plomberie%20(11).jpeg", alt: "Travaux plomberie intérieur" },
+  { src: "/services/plomberie%20(12).jpeg", alt: "Installation moderne plomberie" },
+  { src: "/services/plomberie%20(13).jpeg", alt: "Chantier plomberie" },
+  { src: "/services/plomberie%20(14).jpeg", alt: "Système de distribution d'eau" },
+  { src: "/services/plomberie%20(15).jpeg", alt: "Travaux rénovation plomberie" },
+  { src: "/services/plomberie%20(16).jpeg", alt: "Pose tuyaux muraux" },
+  { src: "/services/plomberie%20(17).jpeg", alt: "Installation complète plomberie" },
+ 
+],
   //tajriba ziyada 
    "l7oop": [
     { src: "/services/test1.png", alt: "hantarakaytzado" },
