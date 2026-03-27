@@ -73,8 +73,8 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
     { src: "/services/camera_03.jpeg", alt: "Caméra 3" },
     { src: "/services/camera_04.jpeg", alt: "Caméra 4" },
   ],
-"Aménagement bois sur mesure": [
-  { src: "/services/khchab1%20(1).jpeg", alt: "Fabrication de placard sur mesure" },
+"placards-lits-sur-mesure": [
+  { src: "/services/khchab1%20(1).jpeg", alt: "Fabrication lit sur mesure" },
   { src: "/services/khchab1%20(2).jpeg", alt: "Fabrication de mobilier en bois" },
   { src: "/services/khchab1%20(3).jpeg", alt: "Structure de lit sur mesure" },
   { src: "/services/khchab1%20(4).jpeg", alt: "Assemblage placard bois" },
@@ -105,8 +105,7 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
   { src: "/services/plomberie%20(8).jpeg", alt: "Finition canalisation" },
   { src: "/services/plomberie%20(9).jpeg", alt: "Système hydraulique extérieur" },
   { src: "/services/plomberie%20(10).jpeg", alt: "Détail installation eau" },
-  { src: "/services/plomberie%20(11).jpeg", alt: "Travaux plomberie intérieur" },
-  { src: "/services/plomberie%20(12).jpeg", alt: "Installation moderne plomberie" },
+
   { src: "/services/plomberie%20(13).jpeg", alt: "Chantier plomberie" },
   { src: "/services/plomberie%20(14).jpeg", alt: "Système de distribution d'eau" },
   { src: "/services/plomberie%20(15).jpeg", alt: "Travaux rénovation plomberie" },
@@ -209,9 +208,7 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
 { src: "/services/electricite (16).jpeg", alt: "Électricité" },
   ],
 
-  plomberie: [
-    // { src: "/services/plomberie.jpeg", alt: "Plomberie" },
-  ],
+
 
   "faux-plafonds-drywall": [
     // { src: "/services/plafonds_01.jpeg", alt: "Faux plafond" },
