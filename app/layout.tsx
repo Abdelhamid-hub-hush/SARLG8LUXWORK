@@ -6,7 +6,18 @@ import Footer from "@/components/Footer";
 
 import { LanguageProvider } from "@/components/lang/LanguageProvider";
 import FloatingActions from "@/components/FloatingActions";
+import { Analytics } from '@vercel/analytics/react';
 
+export default function RootLayout({ children }) {
+  return (
+    <html>
+      <body>
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  );
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://g8luxwork.com"),
@@ -70,4 +81,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </body>
     </html>
   );
+    
 }
