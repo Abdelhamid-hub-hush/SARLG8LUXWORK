@@ -7,7 +7,7 @@ export const site = {
   city: "Témara",
   phoneE164: "+212661829568",
   phoneDigits: "212661829568",
-  email: "g8luxwork@gmail.com",
+  email: "admin@g8luxwork.ma",
   mapsUrl: "https://maps.app.goo.gl/7vLmhFW9ug9QiwnYA?g_st=ic",
   social: {
     instagram: "https://www.instagram.com/g8luxwork?igsh=MW5pMjBvaW1xNGY3bA==",

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G8 LuxWork Card</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+<style>
+body {
+  background:#111;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  margin:0;
+  font-family:'Montserrat', sans-serif;
+}
+
+/* CARD */
+.card {
+  width:540px;
+  height:300px;
+  perspective:1000px;
+}
+
+.inner {
+  width:100%;
+  height:100%;
+  transition:transform 0.8s;
+  transform-style:preserve-3d;
+  position:relative;
+}
+
+.card:hover .inner {
+  transform:rotateY(180deg) translateY(-10px);
+}
+
+/* FRONT & BACK */
+.side {
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  background:#0b0b0f;
+  color:#c9a84c;
+  border:1px solid rgba(201,168,76,0.3);
+  padding:25px;
+  box-sizing:border-box;
+}
+
+/* GOLD TOP LINE */
+.side::before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:1px;
+  background:linear-gradient(to right, transparent, #c9a84c, transparent);
+}
+
+/* FRONT */
+.front {
+  display:flex;
+  justify-content:space-between;
+}
+
+/* LEFT */
+.left {
+  width:50%;
+  font-family:'Cormorant Garamond', serif;
+}
+
+.logo {
+  font-size:28px;
+  letter-spacing:2px;
+}
+
+.services {
+  margin-top:20px;
+  font-size:10px;
+  text-transform:uppercase;
+  line-height:1.8;
+}
+
+/* RIGHT */
+.right {
+  width:50%;
+  font-size:11px;
+  line-height:2;
+}
+
+.quote {
+  position:absolute;
+  bottom:15px;
+  left:25px;
+  font-family:'Cormorant Garamond', serif;
+  font-style:italic;
+  font-size:12px;
+  color:#e8d5a0;
+}
+
+/* BACK */
+.back {
+  transform:rotateY(180deg);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.big {
+  font-family:'Cormorant Garamond', serif;
+  font-size:42px;
+  letter-spacing:3px;
+}
+
+.small {
+  letter-spacing:6px;
+  font-size:10px;
+  margin-bottom:10px;
+}
+
+.tagline {
+  margin-top:15px;
+  font-size:10px;
+  letter-spacing:2px;
+}
+
+/* HOVER LIFT */
+.card:hover {
+  transform:translateY(-5px);
+}
+
+/* PRINT NOTE */
+.print {
+  position:fixed;
+  bottom:10px;
+  color:#777;
+  font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="inner">
+
+    <!-- FRONT -->
+    <div class="side front">
+
+      <div class="left">
+        <div class="logo">G8 LuxWork</div>
+
+        <div class="services">
+          • AMÉNAGEMENT<br>
+          • RÉNOVATION<br>
+          • CONSTRUCTION<br>
+          • DESIGN INTÉRIEUR
+        </div>
+      </div>
+
+      <div class="right">
+        📞 +212 6 61 82 95 68<br>
+        ✉ admin@g8luxwork.ma<br>
+        ⌁ @g8luxwork<br>
+        📍 Témara, Maroc
+      </div>
+
+      <div class="quote">
+        Quality · Precision · Commitment
+      </div>
+
+    </div>
+
+    <!-- BACK -->
+    <div class="side back">
+
+      <div class="small">G · 8</div>
+
+      <div class="big">LuxWork</div>
+
+      <div class="tagline">
+        RÉNOVATION & CONSTRUCTION HAUT DE GAMME
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="print">
+85 × 55 mm — Print Ready
+</div>
+
+</body>
+</html>

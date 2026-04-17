@@ -33,15 +33,7 @@ const videos: VideoItem[] = [
     badgeFr: "Électricité / Laser",
     badgeAr: "كهرباء / ليزر",
   },
- // {
-   // src: "/videos/vid4.mp4",
-   // titleFr:
-   //   "Réalisation d’un placard de chambre en MDF sur mesure avec finition haut de gamme",
-   // titleAr:
-    //  "تصميم وتركيب خزانة ملابس لغرفة النوم من MDF حسب المقاس بتشطيب عالي الجودة",
-   // badgeFr: "Placard sur mesure",
-   // badgeAr: "خزانة حسب المقاس",
- // },
+
   {
     src: "/videos/vid3.mp4",
     titleFr:
@@ -49,6 +41,15 @@ const videos: VideoItem[] = [
     titleAr: "تركيب وربط لوحة كهربائية بدقة عالية وتشطيب آمن واحترافي",
     badgeFr: "Tableau électrique",
     badgeAr: "لوحة كهربائية",
+  },
+    {
+    src: "/videos/vid4.mp4",
+    titleFr:
+     "Réalisation d’un placard de chambre en MDF sur mesure avec finition haut de gamme",
+   titleAr:
+     "تصميم وتركيب خزانة ملابس لغرفة النوم من MDF حسب المقاس بتشطيب عالي الجودة",
+    badgeFr: "Placard sur mesure",
+    badgeAr: "خزانة حسب المقاس",
   },
 ];
 

@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/components/lang/LanguageProvider";
 import FloatingActions from "@/components/FloatingActions";
 
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://g8luxwork.com"),
   title: {

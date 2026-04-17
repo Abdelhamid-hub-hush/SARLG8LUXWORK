@@ -152,6 +152,12 @@ export default function AboutPage() {
       before: "/realisations/electricite-before.jpeg",
       after: "/realisations/electricite-after.jpeg",
     },
+    {
+  titleFr: "Installation placard moderne",
+  titleAr: "تركيب خزانة عصرية",
+  before: "/realisations/placard_avant.jpeg",
+  after: "/realisations/placard_apres.jpeg",
+},
 
 
   ];
