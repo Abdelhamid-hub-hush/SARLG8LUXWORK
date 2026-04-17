@@ -212,15 +212,15 @@ export const services: Service[] = [
     },
   },
 
-  {
-    slug: "peinture-finitions",
-    title: { fr: "Peinture & Finitions", ar: "صباغة وتشطيبات" },
-    short: { fr: "Enduit, peinture, retouches, finition premium.", ar: "معجون، صباغة، رتوشات، تشطيب ممتاز." },
-    bullets: {
-      fr: ["Préparation des murs", "Peinture intérieure/extérieure", "Finition nette", "Nettoyage après travaux"],
-      ar: ["تحضير الجدران", "صباغة داخلية/خارجية", "تشطيب نظيف", "تنظيف بعد الأشغال"],
-    },
-  },
+ // {
+  //  slug: "peinture-finitions",
+   // title: { fr: "Peinture & Finitions", ar: "صباغة وتشطيبات" },
+   // short: { fr: "Enduit, peinture, retouches, finition premium.", ar: "معجون، صباغة، رتوشات، تشطيب ممتاز." },
+   // bullets: {
+    //  fr: ["Préparation des murs", "Peinture intérieure/extérieure", "Finition nette", "Nettoyage après travaux"],
+     // ar: ["تحضير الجدران", "صباغة داخلية/خارجية", "تشطيب نظيف", "تنظيف بعد الأشغال"],
+    //},
+  //},
 
   {
     slug: "renovation-generale",
