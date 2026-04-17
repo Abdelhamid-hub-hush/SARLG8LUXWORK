@@ -7,28 +7,52 @@ import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/components/lang/LanguageProvider";
 import FloatingActions from "@/components/FloatingActions";
 
-// ✅ Analytics import
+// ✅ Analytics
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://g8luxwork.com"),
+
   title: {
-    default: "G8LuxWork | Rénovation, Construction & Aménagement au Maroc",
+    default: "G8LuxWork | Rénovation, Électricité, Peinture & Climatisation au Maroc",
     template: "%s | G8LuxWork",
   },
+
   description:
-    "Entreprise de rénovation, construction et aménagement au Maroc: plomberie, électricité, peinture, faux plafonds, aluminium, verre trempé, caméras de surveillance. Devis rapide.",
+    "Entreprise de rénovation au Maroc spécialisée en électricité, peinture, climatisation, plâtre, cadres muraux et panneaux publicitaires. Devis gratuit et intervention rapide à Beni Mellal.",
+
+  // ✅ SEO Keywords (هنا البلاصة الصحيحة)
+  keywords: [
+    "entreprise rénovation Maroc",
+    "rénovation maison Maroc",
+    "électricité bâtiment Maroc",
+    "installation électrique Maroc",
+    "peinture intérieure extérieure Maroc",
+    "travaux peinture Maroc",
+    "installation climatisation Maroc",
+    "entretien climatisation Maroc",
+    "plâtre décoration intérieure Maroc",
+    "faux plafond Maroc",
+    "cadres muraux décoratifs Maroc",
+    "panneaux publicitaires Maroc",
+    "signalétique Maroc",
+    "travaux rénovation Beni Mellal",
+    "entreprise bâtiment Maroc"
+  ],
+
   alternates: {
     canonical: "https://g8luxwork.com",
   },
+
   openGraph: {
     type: "website",
     url: "https://g8luxwork.com",
-    title: "G8LuxWork | Rénovation, Construction & Aménagement au Maroc",
+    title: "G8LuxWork | Rénovation, Électricité, Peinture & Climatisation au Maroc",
     description:
-      "Entreprise de rénovation, construction et aménagement au Maroc: plomberie, électricité, peinture, faux plafonds, aluminium, verre trempé, caméras de surveillance. Devis rapide.",
+      "Entreprise de rénovation au Maroc spécialisée en électricité, peinture, climatisation, plâtre, cadres muraux et panneaux publicitaires.",
     siteName: "G8LuxWork",
   },
+
   robots: {
     index: true,
     follow: true,
@@ -57,9 +81,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <LanguageProvider>
           <Header />
-          
+
           <main>{children}</main>
-          
+
           <Footer />
 
           {/* SEO: LocalBusiness schema */}
@@ -71,9 +95,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {/* Floating buttons */}
           <FloatingActions />
 
-          {/* ✅ Analytics (important يكون فالأخير) */}
+          {/* ✅ Analytics */}
           <Analytics />
-          
+
         </LanguageProvider>
       </body>
     </html>
