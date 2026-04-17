@@ -33,7 +33,7 @@ export const services: Service[] = [
       "عمل نظيف وسريع"
     ],
   },
-}
+},
 
 
 
