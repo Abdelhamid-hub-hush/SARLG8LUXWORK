@@ -10,6 +10,34 @@ export type Service = {
 export const services: Service[] = [
 
 {
+  slug: "peinture-batiment",
+  title: { 
+    fr: "Peinture bâtiment", 
+    ar: "أشغال الصباغة" 
+  },
+  short: {
+    fr: "Travaux de peinture intérieure et extérieure pour un rendu moderne et soigné.",
+    ar: "أشغال الصباغة الداخلية والخارجية للحصول على مظهر عصري واحترافي.",
+  },
+  bullets: {
+    fr: [
+      "Peinture intérieure & extérieure",
+      "Finition lisse et durable",
+      "Choix de couleurs modernes",
+      "Travail propre et rapide"
+    ],
+    ar: [
+      "صباغة داخلية وخارجية",
+      "تشطيب ناعم ومتين",
+      "اختيار ألوان عصرية",
+      "عمل نظيف وسريع"
+    ],
+  },
+}
+
+
+
+{
   slug: "plafond-lumineux-sky",
   title: {
     fr: "Plafond lumineux Sky",
