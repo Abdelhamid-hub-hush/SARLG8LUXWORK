@@ -6,18 +6,9 @@ import Footer from "@/components/Footer";
 
 import { LanguageProvider } from "@/components/lang/LanguageProvider";
 import FloatingActions from "@/components/FloatingActions";
-import { Analytics } from '@vercel/analytics/react';
 
-export default function RootLayout({ children }) {
-  return (
-    <html>
-      <body>
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  );
-}
+// ✅ Analytics import
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://g8luxwork.com"),
@@ -66,7 +57,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <LanguageProvider>
           <Header />
+          
           <main>{children}</main>
+          
           <Footer />
 
           {/* SEO: LocalBusiness schema */}
@@ -75,11 +68,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
           />
 
-          {/* ✅ Floating buttons (mobile only): Call + WhatsApp */}
+          {/* Floating buttons */}
           <FloatingActions />
+
+          {/* ✅ Analytics (important يكون فالأخير) */}
+          <Analytics />
+          
         </LanguageProvider>
       </body>
     </html>
   );
-    
 }
