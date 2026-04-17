@@ -9,6 +9,17 @@ import type { PhotoItem } from "@/components/Lightbox";
 export const servicePhotos: Record<string, PhotoItem[]> = {
 
   //sky vieu
+
+  "peinture-batiment": [
+  { src: "/services/peinture1.jpeg", alt: "Peinture mur intérieur moderne 1" },
+  { src: "/services/peinture2.jpeg", alt: "Peinture mur intérieur moderne 2" },
+  { src: "/services/peinture3.jpeg", alt: " " },
+  { src: "/services/peinture4.jpeg", alt: "" },
+  { src: "/services/peinture5.jpeg", alt: "Peinture façade extérieure" },
+  { src: "/services/peinture6.jpeg", alt: "Travaux de peinture avant/après" },
+  { src: "/services/peinture7.jpeg", alt: "Finition peinture professionnelle" },
+  { src: "/services/peinture8.jpeg", alt: "Peinture décorative murale" },
+],
 "plafond-lumineux-sky": [
    { src: "/services/sv1.jpeg", alt: "Plafond lumineux effet ciel 1" },
   { src: "/services/sv2.jpeg", alt: "Plafond lumineux effet ciel 2" },
