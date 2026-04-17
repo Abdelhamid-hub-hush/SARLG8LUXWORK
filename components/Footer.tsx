@@ -6,10 +6,9 @@ export default function Footer() {
     <footer className="border-t border-white/10 bg-black/20">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 text-xs text-white/50 md:flex-row md:items-center md:justify-between">
         <div>
-          <div className="text-white/70">
-            © {new Date().getFullYear()} {site.name}. Tous droits réservés.
-          </div>
-
+<div className="text-white/70">
+  © 2022 - {new Date().getFullYear()} {site.name} (anciennement G8Work). Tous droits réservés.
+</div>
           <div className="mt-2">
             {site.city} •{" "}
             <a
