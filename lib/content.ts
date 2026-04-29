@@ -36,6 +36,32 @@ export const services: Service[] = [
 },
 
 
+{
+  slug: "pergola-bioclimatique-bois-aluminium",
+  title: { 
+    fr: "Pergolas sur mesure", 
+    ar: "برغولا عصرية حسب الطلب" 
+  },
+  short: { 
+    fr: "Pergolas modernes pour jardin, terrasse et extérieur.", 
+    ar: "برغولا عصرية للحدائق والتراسات والمساحات الخارجية." 
+  },
+  bullets: {
+    fr: [
+      "Pergola bioclimatique",
+      "Structure bois ou aluminium",
+      "Protection soleil & pluie",
+      "Design élégant sur mesure"
+    ],
+    ar: [
+      "برغولا بيوكليماتيك",
+      "هيكل خشب أو ألمنيوم",
+      "حماية من الشمس والمطر",
+      "تصميم أنيق حسب الطلب"
+    ],
+  },
+},
+
 
 {
   slug: "plafond-lumineux-sky",

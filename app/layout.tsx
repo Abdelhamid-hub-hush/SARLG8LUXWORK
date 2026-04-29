@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Entreprise de rénovation au Maroc spécialisée en électricité, peinture, climatisation, plâtre, cadres muraux et panneaux publicitaires. Devis gratuit et intervention rapide à Beni Mellal.",
 
-  // ✅ SEO Keywords (هنا البلاصة الصحيحة)
+  // ✅ SEO Keywords
   keywords: [
     "entreprise rénovation Maroc",
     "rénovation maison Maroc",

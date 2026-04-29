@@ -220,6 +220,28 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
   ],
 
 
+  pergola: [
+
+{ src: "/services/pergola (1).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (2).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (3).jpeg", alt: "Pergola" },
+
+{ src: "/services/pergola (4).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (5).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (6).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (7).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (8).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (9).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (10).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (11).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (12).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (13).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (14).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (15).jpeg", alt: "Pergola" },
+{ src: "/services/pergola (16).jpeg", alt: "Pergola" },
+
+],
+
 
   "faux-plafonds-drywall": [
     // { src: "/services/plafonds_01.jpeg", alt: "Faux plafond" },
