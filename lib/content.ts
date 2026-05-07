@@ -228,15 +228,43 @@ export const services: Service[] = [
     },
   },
 
+  //{
+   // slug: "aluminium-verre",
+   // title: { fr: "Aluminium & Verre trempé", ar: "ألمنيوم وزجاج مقوّى" },
+   // short: { fr: "Portes, séparations, vitrages.", ar: "أبواب، فواصل، واجهات زجاجية." },
+   // bullets: {
+     // fr: ["Menuiserie aluminium", "Verre trempé", "Portes & séparations", "Pose & ajustements"],
+     // ar: ["نجارة الألمنيوم", "زجاج مقوّى", "أبواب وفواصل", "تركيب وضبط"],
+   // },
+  //},
+  
   {
-    slug: "aluminium-verre",
-    title: { fr: "Aluminium & Verre trempé", ar: "ألمنيوم وزجاج مقوّى" },
-    short: { fr: "Portes, séparations, vitrages.", ar: "أبواب، فواصل، واجهات زجاجية." },
-    bullets: {
-      fr: ["Menuiserie aluminium", "Verre trempé", "Portes & séparations", "Pose & ajustements"],
-      ar: ["نجارة الألمنيوم", "زجاج مقوّى", "أبواب وفواصل", "تركيب وضبط"],
-    },
+  slug: "aluminium-verre",
+  title: {
+    fr: "Aluminium & Verre trempé",
+    ar: "ألمنيوم وزجاج مقوّى",
   },
+  short: {
+    fr: "Portes, séparations et vitrages modernes.",
+    ar: "أبواب، فواصل وواجهات زجاجية عصرية.",
+  },
+  bullets: {
+    fr: [
+      "Menuiserie aluminium",
+      "Verre trempé sécurisé",
+      "Portes & séparations",
+      "Escaliers & garde-corps",
+      "Pose & ajustements"
+    ],
+    ar: [
+      "نجارة الألمنيوم",
+      "زجاج مقوّى آمن",
+      "أبواب وفواصل",
+      "سلالم ودرابزين زجاجي",
+      "تركيب وضبط"
+    ],
+  },
+},
 
  // {
   //  slug: "peinture-finitions",

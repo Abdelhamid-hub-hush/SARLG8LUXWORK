@@ -126,6 +126,26 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
   { src: "/services/plomberie%20(17).jpeg", alt: "Installation complète plomberie" },
  
 ],
+
+
+"aluminium-verre": [
+  { src: "/services/verre (1).JPG", alt: "Installation verre trempé escalier 1" },
+  { src: "/services/verre (2).jpg", alt: "Escalier aluminium et verre 2" },
+  { src: "/services/verre (3).JPG", alt: "Pose vitrage moderne 3" },
+  { src: "/services/verre (4).JPG", alt: "Travaux aluminium et verre 4" },
+  { src: "/services/verre (5).jpg", alt: "Garde corps verre trempé 5" },
+  { src: "/services/verre (6).jpg", alt: "Installation escalier verre 6" },
+  { src: "/services/verre (7).jpg", alt: "Pose vitrage intérieur 7" },
+  { src: "/services/verre (8).jpg", alt: "Escalier moderne verre 8" },
+  { src: "/services/verre (9).jpg", alt: "Structure aluminium verre 9" },
+  { src: "/services/verre (10).jpg", alt: "Escalier suspendu verre 10" },
+  { src: "/services/verre (11).jpg", alt: "Finition aluminium moderne 11" },
+  { src: "/services/verre (12).jpg", alt: "Escalier bois et verre 12" },
+  { src: "/services/verre (13).jpg", alt: "Intérieur moderne vitrage 13" },
+  { src: "/services/verre (14).jpg", alt: "Salon avec vitrage aluminium 14" },
+  { src: "/services/verre (15).jpg", alt: "Escalier design verre trempé 15" },
+],
+
   //tajriba ziyada 
    "l7oop": [
     { src: "/services/test1.png", alt: "hantarakaytzado" },
