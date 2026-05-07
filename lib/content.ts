@@ -10,27 +10,29 @@ export type Service = {
 export const services: Service[] = [
 
 {
-  slug: "peinture-batiment",
-  title: { 
-    fr: "Peinture bâtiment", 
-    ar: "أشغال الصباغة" 
+  slug: "climatisation",
+  title: {
+    fr: "Climatisation & Froid",
+    ar: "التكييف والتبريد",
   },
   short: {
-    fr: "Travaux de peinture intérieure et extérieure pour un rendu moderne et soigné.",
-    ar: "أشغال الصباغة الداخلية والخارجية للحصول على مظهر عصري واحترافي.",
+    fr: "Installation et maintenance de systèmes de climatisation résidentiels et professionnels.",
+    ar: "تركيب وصيانة أنظمة التكييف للمنازل والمساحات المهنية.",
   },
   bullets: {
     fr: [
-      "Peinture intérieure & extérieure",
-      "Finition lisse et durable",
-      "Choix de couleurs modernes",
-      "Travail propre et rapide"
+      "Installation climatiseur",
+      "Maintenance préventive",
+      "Nettoyage & désinfection",
+      "Réparation rapide",
+      "Recharge gaz & contrôle"
     ],
     ar: [
-      "صباغة داخلية وخارجية",
-      "تشطيب ناعم ومتين",
-      "اختيار ألوان عصرية",
-      "عمل نظيف وسريع"
+      "تركيب المكيفات",
+      "صيانة وقائية",
+      "تنظيف وتعقيم",
+      "إصلاح سريع",
+      "شحن الغاز والفحص"
     ],
   },
 },
@@ -148,6 +150,32 @@ export const services: Service[] = [
     ],
   },
 },
+{
+  slug: "peinture-batiment",
+  title: { 
+    fr: "Peinture bâtiment", 
+    ar: "أشغال الصباغة" 
+  },
+  short: {
+    fr: "Travaux de peinture intérieure et extérieure pour un rendu moderne et soigné.",
+    ar: "أشغال الصباغة الداخلية والخارجية للحصول على مظهر عصري واحترافي.",
+  },
+  bullets: {
+    fr: [
+      "Peinture intérieure & extérieure",
+      "Finition lisse et durable",
+      "Choix de couleurs modernes",
+      "Travail propre et rapide"
+    ],
+    ar: [
+      "صباغة داخلية وخارجية",
+      "تشطيب ناعم ومتين",
+      "اختيار ألوان عصرية",
+      "عمل نظيف وسريع"
+    ],
+  },
+},
+
 
   {
     slug: "electricite",
@@ -160,16 +188,6 @@ export const services: Service[] = [
   },
 
 
-  // ✅ Nouveau service
-  {
-    slug: "climatisation",
-    title: { fr: "Climatisation", ar: "تكييف" },
-    short: { fr: "Installation, entretien, réparation, recharge gaz.", ar: "تركيب، صيانة، إصلاح، وشحن الغاز." },
-    bullets: {
-      fr: ["Installation climatiseur", "Nettoyage & entretien", "Réparation", "Recharge gaz / contrôle"],
-      ar: ["تركيب المكيف", "تنظيف وصيانة", "إصلاح", "شحن غاز وفحص"],
-    },
-  },
 
 
 {
@@ -207,15 +225,16 @@ export const services: Service[] = [
     },
   },
 
-  {
-    slug: "faux-plafonds-drywall",
-    title: { fr: "Faux plafonds & Drywall", ar: "أسقف مستعارة ودروايل" },
-    short: { fr: "Cloisons, plafonds, design moderne.", ar: "قواطع وأسقف بتشطيب عصري." },
-    bullets: {
-      fr: ["Faux plafonds", "Cloisons (placo)", "Design moderne", "Finition soignée"],
-      ar: ["سقف مستعار", "قواطع (بلاكو)", "تصميم عصري", "تشطيب متقن"],
-    },
-  },
+
+ // {
+  //  slug: "faux-plafonds-drywall",
+    //title: { fr: "Faux plafonds & Drywall", ar: "أسقف مستعارة ودروايل" },
+    //short: { fr: "Cloisons, plafonds, design moderne.", ar: "قواطع وأسقف بتشطيب عصري." },
+    //bullets: {
+      //fr: ["Faux plafonds", "Cloisons (placo)", "Design moderne", "Finition soignée"],
+      //ar: ["سقف مستعار", "قواطع (بلاكو)", "تصميم عصري", "تشطيب متقن"],
+    //},
+  //},
 
   // ✅ Nouveau service: Gabss
   {
@@ -237,7 +256,7 @@ export const services: Service[] = [
      // ar: ["نجارة الألمنيوم", "زجاج مقوّى", "أبواب وفواصل", "تركيب وضبط"],
    // },
   //},
-  
+
   {
   slug: "aluminium-verre",
   title: {
@@ -276,16 +295,33 @@ export const services: Service[] = [
     //},
   //},
 
-  {
-    slug: "renovation-generale",
-    title: { fr: "Rénovation générale", ar: "ترميم عام" },
-    short: { fr: "Rénovation complète, coordination multi-services.", ar: "ترميم شامل وتنسيق متعدد الخدمات." },
-    bullets: {
-      fr: ["Étude du besoin", "Planification", "Suivi chantier", "Finition & livraison propre"],
-      ar: ["دراسة الحاجة", "تخطيط", "تتبع الأشغال", "تشطيب وتسليم نظيف"],
-    },
+{
+  slug: "cuisines-modernes",
+  title: {
+    fr: "Cuisines modernes",
+    ar: "مطابخ عصرية",
   },
-
+  short: {
+    fr: "Conception et installation de cuisines modernes sur mesure.",
+    ar: "تصميم وتركيب مطابخ عصرية حسب الطلب.",
+  },
+  bullets: {
+    fr: [
+      "Cuisine sur mesure",
+      "Design moderne",
+      "Meubles & rangements",
+      "Éclairage LED",
+      "Finition haut de gamme"
+    ],
+    ar: [
+      "مطابخ حسب الطلب",
+      "تصميم عصري",
+      "خزائن ومساحات تخزين",
+      "إضاءة LED",
+      "تشطيبات عالية الجودة"
+    ],
+  },
+},
 
 
 ];

@@ -8,18 +8,9 @@ import type { PhotoItem } from "@/components/Lightbox";
  */
 export const servicePhotos: Record<string, PhotoItem[]> = {
 
-  //sky vieu
 
-  "peinture-batiment": [
-  { src: "/services/peinture1.jpeg", alt: "Peinture mur intérieur moderne 1" },
-  { src: "/services/peinture2.jpeg", alt: "Peinture mur intérieur moderne 2" },
-  { src: "/services/peinture3.jpeg", alt: " " },
-  { src: "/services/peinture4.jpeg", alt: "" },
-  { src: "/services/peinture5.jpeg", alt: "Peinture façade extérieure" },
-  { src: "/services/peinture6.jpeg", alt: "Travaux de peinture avant/après" },
-  { src: "/services/peinture7.jpeg", alt: "Finition peinture professionnelle" },
-  { src: "/services/peinture8.jpeg", alt: "Peinture décorative murale" },
-],
+
+
 
 
 "plafond-lumineux-sky": [
@@ -164,25 +155,37 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
   { src: "/services/pan.jpeg", alt: "Panneaux publicitaires" },
   { src: "/services/PANi.jpeg", alt: "Panneaux publicitaires" },
 ],
+  "peinture-batiment": [
+  { src: "/services/peinture1.jpeg", alt: "Peinture mur intérieur moderne 1" },
+  { src: "/services/peinture2.jpeg", alt: "Peinture mur intérieur moderne 2" },
+  { src: "/services/peinture3.jpeg", alt: " " },
+  { src: "/services/peinture4.jpeg", alt: "" },
+  { src: "/services/peinture5.jpeg", alt: "Peinture façade extérieure" },
+  { src: "/services/peinture6.jpeg", alt: "Travaux de peinture avant/après" },
+  { src: "/services/peinture7.jpeg", alt: "Finition peinture professionnelle" },
+  { src: "/services/peinture8.jpeg", alt: "Peinture décorative murale" },
+],
 
   // ✅ Climatisation (photos موجودين دابا ف public/services/)
-  climatisation: [
-    { src: "/services/climatisation_01.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_02.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_03.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_04.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_05.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_06.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_07.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_08.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_09.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_10.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_11.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_12.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_13.jpeg", alt: "Climatisation" },
-    { src: "/services/climatisation_14.jpeg", alt: "Climatisation" },
-  ],
+climatisation: [
+  { src: "/services/climatisation_01.jpeg", alt: "Installation climatiseur mural moderne dans salon résidentiel" },
+  { src: "/services/climatisation_02.jpeg", alt: "Climatiseur split installé dans chambre avec finition professionnelle" },
+  { src: "/services/climatisation_03.jpeg", alt: "Système de climatisation mural pour appartement à Casablanca" },
+  { src: "/services/climatisation_04.jpeg", alt: "Technicien climatisation pendant installation unité extérieure" },
+  { src: "/services/climatisation_05.jpeg", alt: "Maintenance et réparation de climatiseur résidentiel" },
+  { src: "/services/climatisation_06.jpeg", alt: "Installation tuyauterie climatisation et raccordement professionnel" },
+  { src: "/services/climatisation_07.jpeg", alt: "Unité extérieure climatiseur installée sur façade immeuble" },
+  { src: "/services/climatisation_08.jpeg", alt: "Climatiseur mural avec décoration intérieure moderne" },
+  { src: "/services/climatisation_09.jpeg", alt: "Service climatisation résidentielle et commerciale au Maroc" },
+  { src: "/services/climatisation_10.jpeg", alt: "Installation climatiseur split avec support mural sécurisé" },
+  { src: "/services/climatisation_11.jpeg", alt: "Entretien système de climatisation intérieur haut de gamme" },
+  { src: "/services/climatisation_12.jpeg", alt: "Pose climatiseur dans salon avec finition propre et élégante" },
+  { src: "/services/climatisation_13.jpeg", alt: "Technicien spécialisé en climatisation et froid résidentiel" },
+  { src: "/services/climatisation_14.jpeg", alt: "Entreprise installation climatisation et maintenance au Maroc" },
+],
 
+
+   
   // ✅ Plâtrerie & Placo (Gabss) — photos موجودين دابا ف public/services/
   "platrerie-placo": [
     { src: "/services/platrerie_01.jpeg", alt: "Plâtrerie / Placo" },
@@ -201,20 +204,19 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
     { src: "/services/platrerie_14.jpeg", alt: "Plâtrerie / Placo" },
   ],
 
-  // ✅ Rénovation générale — (finition) photos موجودين دابا ف public/services/
-  "renovation-generale": [
-    { src: "/services/renovation_finition_01.jpeg", alt: "Finition — rénovation" },
-    { src: "/services/renovation_finition_02.jpeg", alt: "Finition — rénovation" },
-    { src: "/services/renovation_finition_03.jpeg", alt: "Finition — rénovation" },
-    { src: "/services/renovation_finition_04.jpeg", alt: "Finition — rénovation" },
-    { src: "/services/renovation_finition_05.jpeg", alt: "Finition — rénovation" },
-    { src: "/services/renovation_finition_06.jpeg", alt: "Finition — rénovation" },
-    { src: "/services/renovation_finition_07.jpeg", alt: "Finition — rénovation" },
-    { src: "/services/renovation_finition_08.jpeg", alt: "Finition — rénovation" },
-    { src: "/services/renovation_finition_09.jpeg", alt: "Finition — rénovation" },
-    { src: "/services/renovation_finition_10.jpeg", alt: "Finition — rénovation" },
-    { src: "/services/renovation_finition_11.jpeg", alt: "Finition — rénovation" },
-  ],
+"cuisines-modernes": [
+  { src: "/services/renovation_finition_01.jpeg", alt: "Cuisine moderne noire et bois" },
+  { src: "/services/renovation_finition_02.jpeg", alt: "Cuisine blanche moderne" },
+  { src: "/services/renovation_finition_03.jpeg", alt: "Aménagement cuisine contemporaine" },
+  { src: "/services/renovation_finition_04.jpeg", alt: "Cuisine équipée moderne" },
+  { src: "/services/renovation_finition_05.jpeg", alt: "Cuisine avec éclairage LED" },
+  { src: "/services/renovation_finition_06.jpeg", alt: "Cuisine design noir mat" },
+  { src: "/services/renovation_finition_07.jpeg", alt: "Installation cuisine moderne" },
+  { src: "/services/renovation_finition_08.jpeg", alt: "Cuisine brillante haut de gamme" },
+  { src: "/services/renovation_finition_09.jpeg", alt: "Cuisine classique rénovée" },
+  { src: "/services/renovation_finition_10.jpeg", alt: "Cuisine moderne avec rangements" },
+  { src: "/services/renovation_finition_11.jpeg", alt: "Cuisine contemporaine sur mesure" },
+],
 
   // --------------------------------------------
   // 📝 SERVICES Bاقي ماحطيناش ليهم صور
