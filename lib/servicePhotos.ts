@@ -20,6 +20,8 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
   { src: "/services/peinture7.jpeg", alt: "Finition peinture professionnelle" },
   { src: "/services/peinture8.jpeg", alt: "Peinture décorative murale" },
 ],
+
+
 "plafond-lumineux-sky": [
    { src: "/services/sv1.jpeg", alt: "Plafond lumineux effet ciel 1" },
   { src: "/services/sv2.jpeg", alt: "Plafond lumineux effet ciel 2" },
@@ -220,25 +222,12 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
   ],
 
 
-  pergola: [
+  "pergola-bioclimatique-bois-aluminium": [
 
-{ src: "/services/pergola (1).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (2).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (3).jpeg", alt: "Pergola" },
-
-{ src: "/services/pergola (4).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (5).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (6).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (7).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (8).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (9).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (10).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (11).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (12).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (13).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (14).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (15).jpeg", alt: "Pergola" },
-{ src: "/services/pergola (16).jpeg", alt: "Pergola" },
+{ src: "/services/pergola-luxe-terrasse-casablanca-2024.jpeg", alt: "Pergola" },
+{ src: "/services/pergola-bois-terrasse-marrakech-2024.jpeg", alt: "Pergola" },
+{ src: "/services/pergola-jardin-rabat-2024.jpeg", alt: "Pergola" },
+{ src: "/services/pergola-luxe-terrasse-casablanca-2024.jpeg", alt: "Pergola" },
 
 ],
 

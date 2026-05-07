@@ -28,6 +28,59 @@ export const projects: Project[] = [
     ],
   },
 
+
+  {
+  slug: "pergola-bois-terrasse-marrakech-2024",
+  title: "Pergola en Aluminium",
+  category: "Pergola",
+  location: "Marrakech",
+  description:
+    "Réalisation d’une pergola en bois sur mesure avec finition naturelle, idéale pour terrasse et jardin, apportant confort, ombre et design chaleureux.",
+  cover: "/realisations/pergola2/1 (3).jpeg",
+  images: [
+    "/realisations/pergola2/1 (1).jpeg",
+    "/realisations/pergola2/1 (2).jpeg",
+    "/realisations/pergola2/1 (3).jpeg",
+    "/realisations/pergola2/1 (4).jpeg",
+    "/realisations/pergola2/1 (5).jpeg",
+    "/realisations/pergola2/1 (6).jpeg",
+  ],
+},
+  {
+  slug: "pergola-jardin-rabat-2024",
+  title: "Pergola Moderne en Aluminium",
+  category: "Pergola",
+  location: "Rabat",
+  description:
+    "Installation d’une pergola moderne en aluminium sur mesure, idéale pour jardin et terrasse, avec protection contre le soleil et finition élégante.",
+  cover: "/realisations/pergola1/plan.jpeg",
+  images: [
+    "/realisations/pergola1/plan.jpeg",
+    "/realisations/pergola1/1.jpeg",
+    "/realisations/pergola1/2.jpeg",
+    "/realisations/pergola1/3.jpeg",
+    "/realisations/pergola1/4.jpeg",
+    "/realisations/pergola1/5.jpeg",
+  ],
+},
+{
+  slug: "pergola-luxe-terrasse-casablanca-2024",
+  title: "Pergola Luxe pour Terrasse",
+  category: "Pergola",
+  location: "Casablanca",
+  description:
+    "Installation d’une pergola haut de gamme avec structure moderne, parfaite pour terrasse élégante et espace extérieur confortable et design.",
+  cover: "/realisations/pergola3/1 (1).jpeg",
+  images: [
+    "/realisations/pergola3/1 (1).jpeg",
+    "/realisations/pergola3/1 (2).jpeg",
+    "/realisations/pergola3/1 (3).jpeg",
+    "/realisations/pergola3/1 (4).jpeg",
+    "/realisations/pergola3/1 (5).jpeg",
+    "/realisations/pergola3/1 (6).jpeg",
+  ],
+},
+
   {
     slug: "panneaux-publicitaires-2026",
     title: "Panneaux publicitaires",
