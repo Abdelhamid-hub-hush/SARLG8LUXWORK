@@ -256,9 +256,7 @@ export const servicePhotos: Record<string, PhotoItem[]> = {
     // { src: "/services/plafonds_01.jpeg", alt: "Faux plafond" },
   ],
 
-  "aluminium-verre": [
-    // { src: "/services/verre_01.jpeg", alt: "Verre trempé" },
-  ],
+
 
   "peinture-finitions": [
     // { src: "/services/peinture_01.jpeg", alt: "Peinture" },
