@@ -17,7 +17,8 @@ export const metadata: Metadata = {
     default: "G8LuxWork | Rénovation, Électricité, Peinture & Climatisation au Maroc",
     template: "%s | G8LuxWork",
   },
-G
+
+
   description:
     "Entreprise de rénovation au Maroc spécialisée en électricité, peinture, climatisation, plâtre, cadres muraux et panneaux publicitaires. Devis gratuit et intervention rapide à Beni Mellal.",
 
